@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "tbi-button"
+client_id = "c94a18f34f6638b15d4745cec65b9d1e"
+application_url = "https://politicians-mistress-afraid-vid.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://politicians-mistress-afraid-vid.trycloudflare.com/auth/callback",
+  "https://politicians-mistress-afraid-vid.trycloudflare.com/auth/shopify/callback",
+  "https://politicians-mistress-afraid-vid.trycloudflare.com/api/auth/callback",
+  "https://politicians-mistress-afraid-vid.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "plamen5kov-dev-store.myshopify.com"

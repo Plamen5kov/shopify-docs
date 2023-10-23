@@ -2,7 +2,7 @@
 
 name = "tbi-button-extension"
 client_id = "0c399b09cd175a3a15c046a72a2db16c"
-application_url = "https://example.com"
+application_url = "https://customized-ward-projection-dollar.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -10,10 +10,19 @@ embedded = true
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://customized-ward-projection-dollar.trycloudflare.com/auth/callback",
+  "https://customized-ward-projection-dollar.trycloudflare.com/auth/shopify/callback",
+  "https://customized-ward-projection-dollar.trycloudflare.com/api/auth/callback",
+  "https://customized-ward-projection-dollar.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
 
 [webhooks]
 api_version = "2023-10"
 
 [pos]
 embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "plamen5kov-dev-store.myshopify.com"

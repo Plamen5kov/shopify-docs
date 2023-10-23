@@ -18,7 +18,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 
 export default function App() {
   const { showForm } = useLoaderData<typeof loader>();
-
+  
   return (
     <div className="index">
       <div className="content">
